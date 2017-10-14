@@ -11,7 +11,7 @@ main-command-name: "shop"
 # Set the language of the item-, enchantment-, potion- and arrow-effect names
 # The value must equal to the name of one of a file in the 'lang' folder
 # (without the '.lang' extension)
-language-file: "en_US"
+language-file: "de_DE"
 
 # Set whether the floating shop items on top of the chest should be shown
 show-shop-items: true
@@ -39,7 +39,7 @@ enable-debug-log: false
 
 # Set whether WorldGuard integration should be enabled
 # Of course, this only works if WorldGuard is installed
-enable-worldguard-integration: true
+enable-worldguard-integration: false
 
 # Set whether Towny integration should be enabled
 # Of course, this only works if Towny is installed
@@ -47,31 +47,31 @@ enable-towny-integration: true
 
 # Set whether AuthMe integration should be enabled
 # Of course, this only works if AuthMe is installed
-enable-authme-integration: true
+enable-authme-integration: false
 
 # Set whether PlotSquared integration should be enabled
 # Of course, this only works if PlotSquared is installed
-enable-plotsquared-integration: true
+enable-plotsquared-integration: false
 
 # Set whether uSkyBlock integration should be enabled
 # Of course, this only works if uSkyBlock is installed
-enable-uskyblock-integration: true
+enable-uskyblock-integration: false
 
 # Set whether ASkyBlock integration should be enabled
 # Of course, this only works if ASkyBlock is installed
-enable-askyblock-integration: true
+enable-askyblock-integration: false
 
 # Set whether IslandWorld integration should be enabled
 # Of course, this only works if IslandWorld is installed
-enable-islandworld-integration: true
+enable-islandworld-integration: false
 
 # Set whether GriefPrevention integration should be enabled
 # Of course, this only works if GriefPrevention is installed
-enable-griefprevention-integration: true
+enable-griefprevention-integration: false
 
 # Set whether AreaShop integration should be enabled
 # Of course, this only works if AreaShop and WorldGuard is installed
-enable-areashop-integration: true
+enable-areashop-integration: false
 
 # Set whether the vendor of a shop should get messages when players
 # buy or sell something from/to his shop or if his shop is out of stock
