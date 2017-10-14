@@ -39,7 +39,7 @@ debug: false
 using-config: true
 
 # Toggles whether or not all of the BungeeCord functionality will be toggled.
-using-bungeecord: false
+using-bungeecord: true
 
 # (Feature only works on 1.7-1.8 Protocol Hack)
 # Toggles whether or not 1.7 players will see actionbar messages when they're holding an item.
@@ -110,10 +110,10 @@ welcome-title:
   enabled: true
 
   # The title shown.
-  title: 'Welcome to My Server'
+  title: 'Willkommen auf Tavata'
 
   # The subtitle shown.
-  subtitle: 'Hope you enjoy your stay'
+  subtitle: 'dem Server powered by sendelbros'
 
   # The time it takes for the title to fade into the screen. (In ticks)
   fade-in: 20
@@ -128,10 +128,10 @@ welcome-title:
   first-join:
 
     # The title shown.
-    title: 'Welcome to My Server'
+    title: 'Willkommen auf Tavata'
 
     # The subtitle shown.
-    subtitle: 'This is your first time!'
+    subtitle: 'Schön das du uns gefunden hast!'
 
 ############################################################
 # +------------------------------------------------------+ #
