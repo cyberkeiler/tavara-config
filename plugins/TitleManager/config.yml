@@ -76,7 +76,7 @@ player-list:
   # - 'My third line'
   header:
   - ''
-  - '${shine:[0;2;0][0;25;0][0;25;0][&3;&b]My Server}'
+  - '${shine:[0;2;0][0;25;0][0;25;0][&3;&b]Tavata}'
   - ''
 
   # Sets the footer of the player list.
@@ -91,7 +91,6 @@ player-list:
   # - 'My third line'
   footer:
   - ''
-  - '&7World time: &b%{12h-world-time}'
   - '&7Server time: &b%{server-time}'
   - ''
   - '${right-to-left} &b%{online}&7/&b%{max} &7Online Players ${left-to-right}'
@@ -110,10 +109,10 @@ welcome-title:
   enabled: true
 
   # The title shown.
-  title: 'Willkommen auf Tavata'
+  title: 'Tavata'
 
   # The subtitle shown.
-  subtitle: 'dem Server powered by sendelbros'
+  subtitle: 'powered by sendelbros'
 
   # The time it takes for the title to fade into the screen. (In ticks)
   fade-in: 20
@@ -131,7 +130,7 @@ welcome-title:
     title: 'Willkommen auf Tavata'
 
     # The subtitle shown.
-    subtitle: 'Schön das du uns gefunden hast!'
+    subtitle: 'Willkommen auf Tavata'
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -186,7 +185,7 @@ placeholders:
 scoreboard:
 
   # Toggles this feature
-  enabled: true
+  enabled: false
 
   # The title displayed at the very top of the scoreboard
   # The title must consist of 32 or less characters (this includes color codes)
@@ -238,17 +237,17 @@ announcer:
   #   - 'The next actionbar sent'         (The next actionbar message sent)
   announcements:
     my-announcement:
-      interval: 60
+      interval: 600
       timings:
         fade-in: 20
         stay: 40
         fade-out: 20
       titles:
-      - '&aThis is the 1st title announcement\n&aThis is the subtitle'
-      - '&bThis is the 2nd title announcement\n&bThis is the subtitle'
+      - '&asendelbros\n&aHosting this server'
+ #     - '&b\n&bThis is the subtitle'
       actionbar:
       - '&aThis is the 1st actionbar announcement'
-      - '&bThis is the 2nd actionbar announcement'
+#      - '&bThis is the 2nd actionbar announcement'
 
 ############################################################
 # +------------------------------------------------------+ #
