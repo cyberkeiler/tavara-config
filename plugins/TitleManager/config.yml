@@ -146,10 +146,10 @@ welcome-actionbar:
   enabled: true
 
   # The message shown.
-  title: 'Welcome to My Server'
+  title: 'Schön das du wieder da bist!'
 
   # The message shown when the player joins the server for the first time.
-  first-join: 'Welcome to My Server, this is your first time!'
+  first-join: 'Dein erstes Mal auf Tavata? Tippe /hilfe!'
 
 ############################################################
 # +------------------------------------------------------+ #
