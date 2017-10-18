@@ -3,16 +3,28 @@ groups:
     options:
       default: true
       prefix: '&7&oGast&7 '
-    permissions:
-    - modifyworld.*
+      rank: '1000'
+    permissions: []
   member:
     options:
       default: true
-    permissions:
-    - modifyworld.*
+      rank: '500'
+      parents: default
+    permissions: []
   bro:
     options:
       prefix: '&0(&4BRO&0)&7 '
+      rank: '100'
+      parents: member
     permissions:
     - permissions.*
+  gast:
+    permissions:
+    - modifyworld.chat
 schema-version: 1
+users:
+  f56a9763-7fd0-338a-a1bd-98c83636372e:
+    options:
+      name: cyberkeiler
+    group:
+    - default
