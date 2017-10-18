@@ -2,6 +2,17 @@ groups:
   default:
     options:
       default: true
+      prefix: '&7&oGast&7 '
     permissions:
     - modifyworld.*
+  member:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+  bro:
+    options:
+      prefix: '&0(&4BRO&0)&7 '
+    permissions:
+    - permissions.*
 schema-version: 1
