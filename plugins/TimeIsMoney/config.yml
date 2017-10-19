@@ -25,7 +25,7 @@ choose-payout-by-chance: false
 # and "chance", not both.
 payouts:
   1:
-    payout_amount: 10
+    payout_amount: 5
     max_payout_per_day: 200
     # chance: 10
     permission:
