@@ -149,7 +149,7 @@ welcome-actionbar:
   title: 'Schön das du wieder da bist!'
 
   # The message shown when the player joins the server for the first time.
-  first-join: 'Dein erstes Mal auf Tavata? Tippe /hilfe!'
+  first-join: 'Bitte löse das Quiz um Spielen zu können!'
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -189,7 +189,7 @@ scoreboard:
 
   # The title displayed at the very top of the scoreboard
   # The title must consist of 32 or less characters (this includes color codes)
-  title: '${shine:[0;2;0][0;25;0][0;25;0][&3&l;&b&l]My Server}'
+  title: '${shine:[0;2;0][0;25;0][0;25;0][&3&l;&b&l]Tavata}'
 
   # The lines of the scoreboard (Maximum of 15 lines allowed)
   # Each line can only have 40 characters (this includes color codes)
@@ -244,9 +244,11 @@ announcer:
         fade-out: 20
       titles:
       - '&asendelbros\n&aHosting this server'
+      - '&a\n&aTavata'
  #     - '&b\n&bThis is the subtitle'
       actionbar:
       - '&aFinanzielle Zuwendungen jederzeit Willkommen ;)'
+      - '&aOnlinemap auf http://tavata.terramultimedia.de'
 #      - '&bThis is the 2nd actionbar announcement'
 
 ############################################################
