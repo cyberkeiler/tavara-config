@@ -9,10 +9,10 @@ disabled_in_worlds:
 # You can define if the player gets a payout whether player is afk or not.
 # the permission tim.afkbypass would avoid this for certain user or groups.
 afk_payout: false
-display-messages-in-chat: true
+display-messages-in-chat: false
 display-messages-in-actionbar: true
 display-messages-in-actionbar-time: 15
-give_money_every_second: 600
+give_money_every_second: 900
 store-money-in-bank: false
 
 # Define if multiple accounts should get payed with the same ip-address. You may disable this if your players are using multiple accounts per ip.
@@ -25,7 +25,7 @@ choose-payout-by-chance: false
 # and "chance", not both.
 payouts:
   1:
-    payout_amount: 5
+    payout_amount: 10
     max_payout_per_day: 200
     # chance: 10
     permission:
@@ -39,16 +39,16 @@ payouts:
     permission: tim.vip
 
 # Translations
-message: "&aDu bekommst &c%money% &afür 10 min Aktivität!"
+message: "&aDu bekommst &c%money% &afür 15 min Aktivität!"
 message_payoutlimit_reached: "&cSuper, du hast das Tageslimit erreicht! Für deine Aktivität heute erhälst du: 0$"
 message_afk: "&cKein Aktivitätsbonus für dich, sorry! Du bist afk!"
-message_multiple_ips: "&cYou havn't earned money because you're playing with multiple accounts!"
-message_actionbar: "&aYou earned &c%money% &afor 10 minutes online time!"
-message_payoutlimit_reached_actionbar: "&cYou have reached the payout limit today. You got 0$"
-message_afk_actionbar: "&cYou haven't earned money because you were afk!"
-message_atm_noperms: "&cYou don't have the permission to use ATM's!"
-message_atm_nomoneyinbank: "&cYou don't have enough money in bank!"
-message_atm_nomoney: "&cYou don't have enough money!"
+message_multiple_ips: "&cDu bekamst keinen Bonus, da mehrere Accounts mit dieser IP-Adresse eingeloggt sind!"
+message_actionbar: "&c%money% &a Aktivitätsbonus für 15min Onlinezeit gutgeschrieben!"
+message_payoutlimit_reached_actionbar: "&cMaximalen Aktivitätsbonus für heute erreicht: 0$"
+message_afk_actionbar: "&cKein Aktionsbonus gutgeschrieben: AFK!"
+message_atm_noperms: "&cDu darfst keine ATM's verwenden!"
+message_atm_nomoneyinbank: "&cDein Bankkonte ist unreichend gedeckt!"
+message_atm_nomoney: "&cDu hast nicht genug Geld!"
 
 # ATM -> Place down a sign with [atm] on the first line to use it!
 enable_atm: true
