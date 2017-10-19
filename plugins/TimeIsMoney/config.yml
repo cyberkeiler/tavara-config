@@ -11,7 +11,7 @@ disabled_in_worlds:
 afk_payout: false
 display-messages-in-chat: true
 display-messages-in-actionbar: true
-display-messages-in-actionbar-time: 10
+display-messages-in-actionbar-time: 15
 give_money_every_second: 600
 store-money-in-bank: false
 
@@ -25,12 +25,12 @@ choose-payout-by-chance: false
 # and "chance", not both.
 payouts:
   1:
-    payout_amount: 50
-    max_payout_per_day: 1000
+    payout_amount: 5
+    max_payout_per_day: 200
     # chance: 10
     permission:
   2:
-    payout_amount: 100
+    payout_amount: 10
     max_payout_per_day: 10000
     commands:
       - /give %player% diamond 1
@@ -39,9 +39,9 @@ payouts:
     permission: tim.vip
 
 # Translations
-message: "&aYou earned &c%money% &afor 10 minutes online time!"
-message_payoutlimit_reached: "&cYou have reached the payout limit today. You earned 0$"
-message_afk: "&cYou havn't earned money because you were afk!"
+message: "&aDu bekommst &c%money% &afür 10 min Aktivität!"
+message_payoutlimit_reached: "&cSuper, du hast das Tageslimit erreicht! Für deine Aktivität heute erhälst du: 0$"
+message_afk: "&cKein Aktivitätsbonus für dich, sorry! Du bist afk!"
 message_multiple_ips: "&cYou havn't earned money because you're playing with multiple accounts!"
 message_actionbar: "&aYou earned &c%money% &afor 10 minutes online time!"
 message_payoutlimit_reached_actionbar: "&cYou have reached the payout limit today. You got 0$"
@@ -55,12 +55,12 @@ enable_atm: true
 atm_title: "&cATM"
 atm_withdraw: "&cWithdraw"
 atm_deposit: "&cDeposit"
-atm_balance: "&cBank balance:"
+atm_balance: "&cKontostand:"
 atm_worth_gradation:
-  - 10.0
+  - 5.0
+  - 25.0
   - 100.0
-  - 1000.0
-  - 10000.0
+  - 500.0
 
 
 # You can seperate the ATM balances for different worlds by group them. Just set group-atms to true and write atm_groups as described below.
