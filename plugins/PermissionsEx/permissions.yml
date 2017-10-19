@@ -1,5 +1,5 @@
 groups:
-  default:
+  gast:
     options:
       default: true
       prefix: '&7&oGast&7 '
@@ -11,7 +11,7 @@ groups:
       default: 'false'
       rank: '500'
     inheritance:
-    - members
+    - gast
     permissions:
     - shopchest.create
     - shopchest.create.sell
@@ -24,7 +24,7 @@ groups:
       prefix: '&0(&6B&0)&7 '
       rank: '100'
     inheritance:
-    - members
+    - member
     permissions:
     - cs.create
     - tim.bro
