@@ -10,39 +10,31 @@ groups:
     options:
       default: 'false'
       rank: '500'
-      parents: default
+    inheritance:
+    - members
     permissions:
-    - craftconomy.money.balance
+    - shopchest.create
     - shopchest.create.sell
     - shopchest.create.buy
-    - shopchest.create
     - shopchest.sell
     - shopchest.buy
     - craftconomy.money.pay
   bro:
     options:
-      prefix: '&0(&4BRO&0)&7 '
+      prefix: '&0(&6B&0)&7 '
       rank: '100'
-      parents: member
-    permissions:
-    - permissions.*
-  gast:
-    permissions:
-    - modifyworld.chat
-  bros:
-    permissions:
-    - cs.create
-    options:
-      parents: member
     inheritance:
     - members
+    permissions:
+    - cs.create
+    - tim.bro
 schema-version: 1
 users:
   f56a9763-7fd0-338a-a1bd-98c83636372e:
     options:
       name: cyberkeiler
     group:
-    - member
+    - bro
   fc3d3a82-966f-3b4d-b3e5-77eea30402d3:
     group:
     - bro
