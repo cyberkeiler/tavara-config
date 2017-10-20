@@ -13,6 +13,8 @@ groups:
     inheritance:
     - gast
     permissions:
+    - towny.command.town.*
+    - towny.town.*
     - shopchest.create
     - shopchest.create.sell
     - shopchest.create.buy
@@ -37,7 +39,7 @@ users:
     - bro
   fc3d3a82-966f-3b4d-b3e5-77eea30402d3:
     group:
-    - bro
+    - member
     options:
       name: FredBurton
   d963ead0-f45c-3fa8-9e61-2c2e091d0a64:
