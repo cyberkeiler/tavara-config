@@ -26,17 +26,17 @@ choose-payout-by-chance: false
 payouts:
   1:
     payout_amount: 5
-    max_payout_per_day: 200
+    max_payout_per_day: 150
     # chance: 10
     permission:
   2:
-    payout_amount: 10
-    max_payout_per_day: 10000
-    commands:
-      - /give %player% diamond 1
+    payout_amount: 5
+    max_payout_per_day: 200
+    # commands:
+    #  - /give %player% diamond 1
     # chance: 90
     # You can use any permission name you want. e.g. myserver.donor
-    permission: tim.vip
+    permission: tim.bro
 
 # Translations
 message: "&aDu bekommst &c%money% &afür 15 min Aktivität!"
