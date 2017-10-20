@@ -9,6 +9,7 @@ groups:
   member:
     options:
       default: 'false'
+      prefix: ''
       rank: '500'
     inheritance:
     - gast
