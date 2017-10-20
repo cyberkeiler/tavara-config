@@ -90,8 +90,8 @@ levels:
   # default Town levels.
   town_level:
   - numResidents: 0
-    namePostfix: ' Ruins'
-    mayorPrefix: 'Spirit '
+    namePostfix: ' Ruine'
+    mayorPrefix: 'Geist '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 1
@@ -104,40 +104,40 @@ levels:
     townBlockLimit: 16
     upkeepModifier: 1.0
   - numResidents: 2
-    namePostfix: ' (Hamlet)'
+    namePostfix: ' (Siedlung)'
     mayorPrefix: 'Chief '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 32
-    upkeepModifier: 1.0
-  - numResidents: 6
-    namePostfix: ' (Village)'
+    upkeepModifier: 0.7
+  - numResidents: 3
+    namePostfix: ' (Dorf)'
     mayorPrefix: 'Baron Von '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 96
-    upkeepModifier: 1.0
-  - numResidents: 10
-    namePostfix: ' (Town)'
+    upkeepModifier: 0.5
+  - numResidents: 5
+    namePostfix: ' (Stadt)'
     mayorPrefix: 'Viscount '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 160
-    upkeepModifier: 1.0
+    upkeepModifier: 0.5
   - numResidents: 14
     namePostfix: ' (Large Town)'
     mayorPrefix: 'Count Von '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 224
-    upkeepModifier: 1.0
+    upkeepModifier: 0.5
   - numResidents: 20
     namePostfix: ' (City)'
     mayorPrefix: 'Earl '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 320
-    upkeepModifier: 1.0
+    upkeepModifier: 0.5
   - numResidents: 24
     namePostfix: ' (Large City)'
     mayorPrefix: 'Duke '
@@ -747,9 +747,9 @@ economy:
  
   new_expand:
     # How much it costs to start a nation.
-    price_new_nation: '1000.0'
+    price_new_nation: '500.0'
     # How much it costs to start a town.
-    price_new_town: '250.0'
+    price_new_town: '120.0'
     # How much it costs to make an outpost. An outpost isn't limited to being on the edge of town.
     price_outpost: '500.0'
     # The price for a town to expand one townblock.
@@ -757,7 +757,7 @@ economy:
     # How much it costs a player to buy extra blocks.
     price_purchased_bonus_townblock: '25.0'
     # How much every extra bonus block costs more. Set to 1 to deactivate this. 1.2 means +20% to every bonus claim block cost.
-    price_purchased_bonus_townblock_increase: '1.0'
+    price_purchased_bonus_townblock_increase: '1.1'
  
   death:
     # Either fixed or percentage.
@@ -785,11 +785,11 @@ economy:
     nation_allow_withdrawls: 'true'
   closed_economy:
     # The name of the account that all money that normally disappears goes into.
-    server_account: towny-server
+    server_account: TavataKasse
     # Turn on/off whether all transactions that normally don't have a second party are to be done with a certain account.
     # Eg: The money taken during Daily Taxes is just removed. With this on, the amount taken would be funneled into an account.
     #     This also applies when a player collects money, like when the player is refunded money when a delayed teleport fails.
-    enabled: 'false'
+    enabled: 'true'
  
   daily_taxes:
     # Enables taxes to be collected daily by town/nation
@@ -807,10 +807,10 @@ economy:
     price_nation_upkeep: '100.0'
     # The server's daily charge on each town. If a town fails to pay this upkeep
     # all of it's residents are kicked and the town is removed.
-    price_town_upkeep: '10.0'
+    price_town_upkeep: '5.0'
     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
     # calculated by (number of claimed plots X price_town_upkeep).
-    town_plotbased_upkeep: 'false'
+    town_plotbased_upkeep: 'true'
     # If enabled and you set a negative upkeep for the town
     # any funds the town gains via upkeep at a new day
     # will be shared out between the plot owners.
