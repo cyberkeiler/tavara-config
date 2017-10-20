@@ -14,6 +14,7 @@ groups:
     inheritance:
     - gast
     permissions:
+    - towny.town.new
     - towny.command.town.*
     - towny.town.*
     - shopchest.create
@@ -37,7 +38,7 @@ users:
     options:
       name: cyberkeiler
     group:
-    - bro
+    - member
   fc3d3a82-966f-3b4d-b3e5-77eea30402d3:
     group:
     - member
@@ -48,3 +49,6 @@ users:
       name: Piddixxs
     group:
     - member
+  9c856972-77e4-3bc9-b6bf-b4698803b8ed:
+    options:
+      name: wiegeht_s
