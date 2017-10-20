@@ -6,13 +6,11 @@ groups:
       rank: '1000'
     permissions:
     - craftconomy.money.balance
+    - tavata.gast
   member:
     options:
       default: 'false'
-      prefix: ''
       rank: '500'
-    inheritance:
-    - gast
     permissions:
     - towny.town.new
     - towny.command.town.*
@@ -22,6 +20,7 @@ groups:
     - shopchest.create.buy
     - shopchest.sell
     - shopchest.buy
+    - craftconomy.money.balance
     - craftconomy.money.pay
   bro:
     options:
