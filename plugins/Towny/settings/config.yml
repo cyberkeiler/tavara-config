@@ -144,14 +144,14 @@ levels:
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 384
-    upkeepModifier: 1.0
+    upkeepModifier: 0.2
   - numResidents: 28
     namePostfix: ' (Metropolis)'
     mayorPrefix: 'Lord '
     namePrefix: ''
     mayorPostfix: ''
     townBlockLimit: 448
-    upkeepModifier: 1.0
+    upkeepModifier: 0.2
  
   # default Nation levels.
   nation_level:
@@ -364,7 +364,7 @@ global_town_settings:
   # Players within their town or allied towns will regenerate half a heart after every health_regen_speed seconds.
   health_regen:
     speed: 3s
-    enable: 'true'
+    enable: 'false'
   # Allow towns to claim outposts (a townblock not connected to town).
   allow_outposts: 'true'
   # Allow the use of /town spawn
@@ -376,7 +376,7 @@ global_town_settings:
   # Allow regular residents to use /town spawn [town] to other towns in a nation allied with your nation.
   allow_town_spawn_travel_ally: 'true'
   # If non zero it delays any spawn request by x seconds.
-  teleport_warmup_time: '0'
+  teleport_warmup_time: '30'
   # Respawn the player at his town spawn point when he/she dies
   town_respawn: 'false'
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
@@ -392,7 +392,7 @@ global_town_settings:
   required_number_residents_join_nation: '0'
   # The required number of residents in a town to create a nation
   # If the number is 0, towns will not require a certain amount of residents to create a nation
-  required_number_residents_create_nation: '0'
+  required_number_residents_create_nation: '3'
   # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
   refund_disband_low_residents: 'true'
   # List of blocks which can be modified on farm plots, as long as player is also allowed in the plot's '/plot perm' line.
@@ -465,7 +465,7 @@ plugin:
     day_interval: 1d
     # The time each "day", when taxes will be collected.
     # MUST be less than day_interval. Default is 12h (midday).
-    new_day_time: 12h
+    new_day_time: 18h
  
   # Lots of messages to tell you what's going on in the server with time taken for events.
   debug_mode: 'false'
@@ -674,10 +674,10 @@ default_perm_flags:
   # switch - trigger or activate switches (as defined in switch_ids)
   town:
     default:
-      pvp: 'true'
+      pvp: 'false'
       fire: 'false'
       explosion: 'false'
-      mobs: 'false'
+      mobs: 'true'
     resident:
       build: 'true'
       destroy: 'true'
@@ -749,9 +749,9 @@ economy:
     # How much it costs to start a nation.
     price_new_nation: '500.0'
     # How much it costs to start a town.
-    price_new_town: '120.0'
+    price_new_town: '125.0'
     # How much it costs to make an outpost. An outpost isn't limited to being on the edge of town.
-    price_outpost: '500.0'
+    price_outpost: '250.0'
     # The price for a town to expand one townblock.
     price_claim_townblock: '25.0'
     # How much it costs a player to buy extra blocks.
@@ -807,7 +807,7 @@ economy:
     price_nation_upkeep: '50.0'
     # The server's daily charge on each town. If a town fails to pay this upkeep
     # all of it's residents are kicked and the town is removed.
-    price_town_upkeep: '2'
+    price_town_upkeep: '1'
     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
     # calculated by (number of claimed plots X price_town_upkeep).
     town_plotbased_upkeep: 'true'
